@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 Kubernetes Resources Hub - Your Journey Starts Here!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    
+    <header class="hero">
+        <div class="container">
+            <h1 class="glitch" data-text="⎈ Kubernetes Resources Hub">⎈ Kubernetes Resources Hub</h1>
+            <p class="tagline">Your ultimate guide to mastering Kubernetes - from zero to hero! 🚀</p>
+            <div class="stats">
+                <div class="stat-card">
+                    <span class="stat-number" data-target="31">0</span>
+                    <span class="stat-label">Beginner Resources</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="29">0</span>
+                    <span class="stat-label">Developer Tools</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="60">0</span>
+                    <span class="stat-label">Total Resources</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="🔍 Search resources..." />
+                <button id="clearSearch" class="clear-btn">✕</button>
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">🌟 All Resources</button>
+                <button class="filter-btn" data-filter="beginner">🎓 Beginner</button>
+                <button class="filter-btn" data-filter="developer">💻 Developer</button>
+            </div>
+        </div>
+
+        <div class="contribute-banner">
+            <p>💡 <strong>Know a great resource?</strong> Leave a comment or URL - let's build this together!</p>
+        </div>
+
+        <section id="beginnerSection" class="resource-section">
+            <h2 class="section-title">
+                <span class="emoji">🎓</span>
+                Beginner Resources
+                <span class="badge">Start Here!</span>
+            </h2>
+            <div class="resources-grid" id="beginnerGrid">
+                <!-- Beginner resources will be inserted here -->
+            </div>
+        </section>
+
+        <section id="developerSection" class="resource-section">
+            <h2 class="section-title">
+                <span class="emoji">💻</span>
+                Developer Resources
+                <span class="badge">Level Up!</span>
+            </h2>
+            <div class="resources-grid" id="developerGrid">
+                <!-- Developer resources will be inserted here -->
+            </div>
+        </section>
+
+        <div id="noResults" class="no-results" style="display: none;">
+            <div class="no-results-content">
+                <span class="emoji-large">🔍</span>
+                <h3>No resources found</h3>
+                <p>Try a different search term or filter</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Made with ❤️ for the Kubernetes Community</p>
+            <p>🌟 Star this project | 🐛 Report issues | 🤝 Contribute</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
