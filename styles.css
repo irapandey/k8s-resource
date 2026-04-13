@@ -306,6 +306,21 @@ body {
     margin: 0;
 }
 
+.contribute-banner a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid var(--secondary);
+    padding-bottom: 2px;
+    transition: all 0.3s ease;
+}
+
+.contribute-banner a:hover {
+    color: var(--light);
+    border-bottom-color: var(--light);
+    padding-bottom: 4px;
+}
+
 /* Resource Sections */
 .resource-section {
     margin: 60px 0;
@@ -419,20 +434,31 @@ body {
     font-size: 1.2rem;
 }
 
+.resource-description {
+    color: rgba(248, 249, 250, 0.8);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    padding: 10px 0;
+}
+
 .resource-card a {
     color: var(--light);
     text-decoration: none;
     display: block;
     padding: 10px 0;
     border-top: 1px solid rgba(50, 108, 229, 0.3);
-    margin-top: 10px;
+    margin-top: 5px;
     transition: all 0.3s ease;
     word-break: break-all;
+    font-size: 0.9rem;
+    opacity: 0.7;
 }
 
 .resource-card a:hover {
     color: var(--secondary);
     padding-left: 10px;
+    opacity: 1;
 }
 
 .resource-card.hidden {
@@ -486,6 +512,19 @@ footer {
 footer p {
     margin: 10px 0;
     color: var(--light);
+}
+
+footer a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+footer a:hover {
+    color: var(--light);
+    border-bottom-color: var(--light);
 }
 
 /* Responsive Design */

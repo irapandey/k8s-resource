@@ -1,58 +1,30 @@
 // Resource data from resources.md
-const beginnerResources = [
-    { name: 'Kube Academy', url: 'https://kube.academy/' },
-    { name: 'Kubernetes 101', url: 'https://kube.academy/courses/kubernetes-101/' },
-    { name: 'Docs Home', url: 'https://kubernetes.io/docs/home/' },
-    { name: 'CKS CKA CKAD Simulator', url: 'https://killer.sh/' },
-    { name: 'Udemy CKA Courses', url: 'https://www.udemy.com/topic/certified-kubernetes-administrator-cka/' },
-    { name: 'CKAD Practice Questions', url: 'https://dev.to/liptanbiswas/ckad-practice-questions-4mpn' },
-    { name: 'CKAD Exercises', url: 'https://github.com/dgkanatsios/CKAD-exercises' },
-    { name: 'CKAD Prep', url: 'https://github.com/bmuschko/ckad-prep/' },
-    { name: 'Katacoda Kubernetes', url: 'https://www.katacoda.com/courses/kubernetes' },
-    { name: 'CKA Exam Preparation', url: 'https://kube.academy/courses/how-to-prepare-for-the-cka-exam' },
-    { name: 'edX Kubernetes Course', url: 'https://www.edx.org/course/introduction-to-kubernetes' },
-    { name: 'Kubectl Cheat Sheet', url: 'https://kubernetes.io/docs/reference/kubectl/cheatsheet/' },
-    { name: 'Learn K8s Academy', url: 'https://learnk8s.io/academy' },
-    { name: 'Collabnix Kubelabs', url: 'https://collabnix.github.io/kubelabs/' },
-    { name: 'KodeKloud', url: 'https://kodekloud.com/' },
-    { name: 'TGIK', url: 'https://tgik.io' },
-    { name: 'Intro Slides', url: 'https://docs.google.com/presentation/d/1WjSJHiMgaBABk3T1MRZp2N5znpIxGMYVven2sHN800w/edit?usp=sharing' },
-    { name: 'Code Walkthroughs', url: 'https://www.youtube.com/playlist?list=PL69nYSiGNLP0gugLYzpNR1ueyUj9GjzpK' },
-    { name: 'Exam Prep Resources', url: 'https://bit.ly/2IdKwIc' },
-    { name: 'Core Concepts of Kubernetes', url: 'https://dominik-tornow.medium.com/' },
-    { name: 'CNCF YouTube', url: 'https://youtube.com/c/cloudnativefdn' },
-    { name: 'Kubernetes Design Principles', url: 'https://youtu.be/ZuIQurh_kDk' },
-    { name: 'Kubernetes Fundamentals', url: 'https://k8sfun.courselabs.co/' },
-    { name: 'CKAD Resources', url: 'https://gist.github.com/carlisia/76825e553a3d94029dcd8069437f39c5' },
-    { name: 'Security Resources', url: 'https://github.com/magnologan/awesome-k8s-security' }
+const resources = [
+    { name: 'Kube Academy', description: 'Comprehensive Kubernetes learning platform with courses and tutorials', url: 'https://kube.academy/', category: 'courses' },
+    { name: 'Kubernetes 101', description: 'Introduction course to Kubernetes fundamentals', url: 'https://kube.academy/courses/kubernetes-101/', category: 'courses' },
+    { name: 'Docs Home', description: 'Official Kubernetes documentation', url: 'https://kubernetes.io/docs/home/', category: 'docs' },
+    { name: 'CKS CKA CKAD Simulator', description: 'Practice simulator for Kubernetes certifications', url: 'https://killer.sh/', category: 'practice' },
+    { name: 'Udemy CKA Courses', description: 'Certified Kubernetes Administrator courses on Udemy', url: 'https://www.udemy.com/topic/certified-kubernetes-administrator-cka/', category: 'courses' },
+    { name: 'CKAD Practice Questions', description: 'Practice questions for CKAD certification', url: 'https://dev.to/liptanbiswas/ckad-practice-questions-4mpn', category: 'practice' },
+    { name: 'CKAD Exercises', description: 'Hands-on exercises for CKAD exam preparation', url: 'https://github.com/dgkanatsios/CKAD-exercises', category: 'practice' },
+    { name: 'CKAD Prep', description: 'CKAD certification preparation guide', url: 'https://github.com/bmuschko/ckad-prep/', category: 'practice' },
+    { name: 'CKA Exam Preparation', description: 'How to prepare for the CKA exam', url: 'https://kube.academy/courses/how-to-prepare-for-the-cka-exam', category: 'practice' },
+    { name: 'edX Kubernetes Course', description: 'Introduction to Kubernetes on edX', url: 'https://www.edx.org/course/introduction-to-kubernetes', category: 'courses' },
+    { name: 'Kubectl Cheat Sheet', description: 'Quick reference for kubectl commands', url: 'https://kubernetes.io/docs/reference/kubectl/cheatsheet/', category: 'docs' },
+    { name: 'Learn K8s Academy', description: 'Kubernetes training and workshops', url: 'https://learnk8s.io/academy', category: 'courses' },
+    { name: 'Collabnix Kubelabs', description: 'Hands-on Kubernetes labs and tutorials', url: 'https://collabnix.github.io/kubelabs/', category: 'practice' },
+    { name: 'KodeKloud', description: 'Interactive learning platform for DevOps and Kubernetes', url: 'https://kodekloud.com/', category: 'courses' },
+    { name: 'TGIK', description: 'TGI Kubernetes - Weekly Kubernetes learning show', url: 'https://tgik.io', category: 'courses' },
+    { name: 'Intro Slides', description: 'Kubernetes introduction presentation slides', url: 'https://docs.google.com/presentation/d/1WjSJHiMgaBABk3T1MRZp2N5znpIxGMYVven2sHN800w/edit?usp=sharing', category: 'docs' },
+    { name: 'Code Walkthroughs', description: 'Video walkthroughs of Kubernetes code', url: 'https://www.youtube.com/playlist?list=PL69nYSiGNLP0gugLYzpNR1ueyUj9GjzpK', category: 'courses' },
+    { name: 'Exam Prep Resources', description: 'Collection of Kubernetes exam preparation materials', url: 'https://bit.ly/2IdKwIc', category: 'practice' },
+    { name: 'Core Concepts of Kubernetes', description: 'Deep dive into Kubernetes core concepts', url: 'https://dominik-tornow.medium.com/', category: 'docs' },
+    { name: 'CNCF YouTube', description: 'Cloud Native Computing Foundation YouTube channel', url: 'https://youtube.com/c/cloudnativefdn', category: 'courses' },
+    { name: 'Kubernetes Design Principles', description: 'Understanding Kubernetes design and architecture', url: 'https://youtu.be/ZuIQurh_kDk', category: 'courses' },
+    { name: 'Security Resources', description: 'Awesome Kubernetes security resources and tools', url: 'https://github.com/magnologan/awesome-k8s-security', category: 'docs' }
 ];
 
-const developerResources = [
-    { name: 'Dims Twitter Thread', url: 'https://twitter.com/dims/status/1329400522890219520?s=20' },
-    { name: 'Kubernetes Contributor Site', url: 'https://k8s.dev/' },
-    { name: 'Kubernetes Slack', url: 'https://slack.k8s.io/' },
-    { name: 'Developers Guide', url: 'https://github.com/kubernetes/community/tree/master/contributors/devel/' },
-    { name: 'Contributors Guide', url: 'https://github.com/kubernetes/community/blob/master/contributors/guide/' },
-    { name: 'Release Engineering', url: 'https://github.com/kubernetes/sig-release/tree/master/release-engineering/' },
-    { name: 'Community Calendar', url: 'https://k8s.dev/calendar/' },
-    { name: 'Test Grid', url: 'https://testgrid.k8s.io/' },
-    { name: 'Search K8s Repos', url: 'https://cs.k8s.io/' },
-    { name: 'Kubernetes Enhancements', url: 'https://github.com/kubernetes/enhancements/' },
-    { name: 'Test Infrastructure', url: 'https://github.com/kubernetes/test-infra#ci-job-management' },
-    { name: 'PR Dashboard', url: 'https://gubernator.k8s.io/pr/' },
-    { name: 'Prow Jobs', url: 'https://prow.k8s.io/' },
-    { name: 'Bot Commands', url: 'https://prow.k8s.io/command-help' },
-    { name: 'Aggregated Failures', url: 'https://storage.googleapis.com/k8s-gubernator/triage/index.html' },
-    { name: 'Dev Stats', url: 'https://k8s.devstats.cncf.io/' },
-    { name: 'Merge Queue', url: 'https://prow.k8s.io/tide#/queue' },
-    { name: 'Short URLs', url: 'https://github.com/kubernetes/k8s.io/blob/main/k8s.io/' },
-    { name: 'On Call', url: 'https://storage.googleapis.com/test-infra-oncall/oncall.html' },
-    { name: 'Kubernetes the Hard Way', url: 'https://github.com/kelseyhightower/kubernetes-the-hard-way' },
-    { name: 'What are Kubernetes Pods?', url: 'https://www.ianlewis.org/en/what-are-kubernetes-pods-anyway' },
-    { name: 'The Almighty Pause Container', url: 'https://www.ianlewis.org/en/almighty-pause-container' },
-    { name: 'Events, the DNA of Kubernetes', url: 'https://www.mgasch.com/2018/08/k8sevents/' },
-    { name: 'QoS and Kubernetes Scheduler', url: 'https://www.mgasch.com/2017/10/sched-reconcile/' }
-];
+
 
 // Initialize the page
 document.addEventListener('DOMContentLoaded', () => {
@@ -64,23 +36,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Render resource cards
 function renderResources() {
-    const beginnerGrid = document.getElementById('beginnerGrid');
-    const developerGrid = document.getElementById('developerGrid');
+    const resourcesGrid = document.getElementById('resourcesGrid');
     
-    beginnerGrid.innerHTML = beginnerResources.map((resource, index) => 
-        createResourceCard(resource, 'beginner', index)
-    ).join('');
-    
-    developerGrid.innerHTML = developerResources.map((resource, index) => 
-        createResourceCard(resource, 'developer', index)
+    resourcesGrid.innerHTML = resources.map((resource, index) =>
+        createResourceCard(resource, index)
     ).join('');
 }
 
 // Create a resource card HTML
-function createResourceCard(resource, category, index) {
+function createResourceCard(resource, index) {
     return `
-        <div class="resource-card" data-category="${category}" data-name="${resource.name.toLowerCase()}" style="animation-delay: ${index * 0.05}s">
+        <div class="resource-card" data-category="${resource.category}" data-name="${resource.name.toLowerCase()}" data-description="${resource.description.toLowerCase()}" style="animation-delay: ${index * 0.05}s">
             <h3>${resource.name}</h3>
+            <p class="resource-description">${resource.description}</p>
             <a href="${resource.url}" target="_blank" rel="noopener noreferrer">${resource.url}</a>
         </div>
     `;
@@ -137,8 +105,9 @@ function filterResources(searchTerm) {
     
     cards.forEach(card => {
         const name = card.dataset.name;
+        const description = card.dataset.description;
         const url = card.querySelector('a').textContent.toLowerCase();
-        const matches = name.includes(searchTerm) || url.includes(searchTerm);
+        const matches = name.includes(searchTerm) || description.includes(searchTerm) || url.includes(searchTerm);
         
         if (matches) {
             card.classList.remove('hidden');
@@ -148,62 +117,32 @@ function filterResources(searchTerm) {
         }
     });
     
-    updateSectionVisibility();
     toggleNoResults(visibleCount === 0);
 }
 
 // Filter by category
 function filterByCategory(category) {
-    const beginnerSection = document.getElementById('beginnerSection');
-    const developerSection = document.getElementById('developerSection');
     const cards = document.querySelectorAll('.resource-card');
     
-    if (category === 'all') {
-        beginnerSection.style.display = 'block';
-        developerSection.style.display = 'block';
-        cards.forEach(card => card.classList.remove('hidden'));
-    } else if (category === 'beginner') {
-        beginnerSection.style.display = 'block';
-        developerSection.style.display = 'none';
-        cards.forEach(card => {
-            if (card.dataset.category === 'beginner') {
+    cards.forEach(card => {
+        if (category === 'all') {
+            card.classList.remove('hidden');
+        } else {
+            if (card.dataset.category === category) {
                 card.classList.remove('hidden');
+            } else {
+                card.classList.add('hidden');
             }
-        });
-    } else if (category === 'developer') {
-        beginnerSection.style.display = 'none';
-        developerSection.style.display = 'block';
-        cards.forEach(card => {
-            if (card.dataset.category === 'developer') {
-                card.classList.remove('hidden');
-            }
-        });
-    }
+        }
+    });
     
     const searchInput = document.getElementById('searchInput');
     if (searchInput.value) {
         filterResources(searchInput.value.toLowerCase());
     }
     
-    updateSectionVisibility();
-}
-
-// Update section visibility
-function updateSectionVisibility() {
-    const beginnerSection = document.getElementById('beginnerSection');
-    const developerSection = document.getElementById('developerSection');
-    
-    const beginnerVisible = Array.from(document.querySelectorAll('#beginnerGrid .resource-card'))
-        .some(card => !card.classList.contains('hidden'));
-    const developerVisible = Array.from(document.querySelectorAll('#developerGrid .resource-card'))
-        .some(card => !card.classList.contains('hidden'));
-    
-    if (beginnerSection.style.display !== 'none') {
-        beginnerSection.style.display = beginnerVisible ? 'block' : 'none';
-    }
-    if (developerSection.style.display !== 'none') {
-        developerSection.style.display = developerVisible ? 'block' : 'none';
-    }
+    const visibleCount = Array.from(cards).filter(card => !card.classList.contains('hidden')).length;
+    toggleNoResults(visibleCount === 0);
 }
 
 // Toggle no results message
@@ -296,8 +235,7 @@ document.querySelectorAll('.resource-card').forEach(card => {
 });
 
 console.log('🚀 Kubernetes Resources Hub loaded successfully!');
-console.log(`📚 ${beginnerResources.length} beginner resources available`);
-console.log(`💻 ${developerResources.length} developer resources available`);
+console.log(`📚 ${resources.length} learning resources available`);
 console.log('💡 Press "/" to focus search, "Escape" to clear');
 
 // Made with Bob

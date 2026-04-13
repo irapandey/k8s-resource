@@ -5,8 +5,9 @@ An interactive, fun, and exciting webpage showcasing Kubernetes learning resourc
 ## ✨ Features
 
 - **🎨 Beautiful Animated UI** - Stunning gradient backgrounds, smooth animations, and interactive elements
-- **🔍 Real-time Search** - Instantly filter resources as you type
-- **🎯 Smart Filtering** - Toggle between Beginner and Developer resources
+- **🔍 Real-time Search** - Instantly filter resources by name, description, or URL
+- **🎯 Smart Filtering** - Filter by Courses & Tutorials, Practice & Exams, or Documentation
+- **📝 Detailed Descriptions** - Each resource includes a helpful description
 - **📊 Live Statistics** - Animated counters showing resource counts
 - **⌨️ Keyboard Shortcuts** - Press `/` to search, `Escape` to clear
 - **📱 Fully Responsive** - Works perfectly on all devices
@@ -40,8 +41,9 @@ python -m http.server 8000
 
 ### Filter by Category
 - **🌟 All Resources** - Show everything
-- **🎓 Beginner** - Learning resources, tutorials, and exam prep
-- **💻 Developer** - Contribution guides, tools, and infrastructure
+- **📚 Courses & Tutorials** - Learning platforms, video courses, and tutorials
+- **✍️ Practice & Exams** - Practice exercises, simulators, and certification prep
+- **📖 Documentation** - Official docs, guides, and reference materials
 
 ### Interact with Cards
 - **Hover** over cards to see cool animations
@@ -75,11 +77,16 @@ Edit the CSS variables in `styles.css`:
 ```
 
 ### Add New Resources
-Edit the arrays in `script.js`:
+Edit the resources array in `script.js`:
 
 ```javascript
-const beginnerResources = [
-    { name: 'Your Resource', url: 'https://example.com' },
+const resources = [
+    {
+        name: 'Your Resource',
+        description: 'Brief description of the resource',
+        url: 'https://example.com',
+        category: 'courses' // or 'practice' or 'docs'
+    },
     // Add more...
 ];
 ```
@@ -98,11 +105,12 @@ All animations are in `styles.css` with `@keyframes` rules. Adjust timing and ef
 - 🎪 Bounce animation on emojis
 
 ### Interactive Elements
-- 🔍 Live search with instant filtering
-- 🎯 Category filters (All/Beginner/Developer)
+- 🔍 Live search with instant filtering (searches name, description, and URL)
+- 🎯 Category filters (All/Courses/Practice/Documentation)
 - ⌨️ Keyboard shortcuts for power users
 - 🖱️ Click-to-open on entire cards
 - 📱 Touch-friendly on mobile devices
+- 📝 Descriptive text for each resource
 
 ### User Experience
 - 🚀 Fast loading (no external dependencies)
@@ -122,38 +130,39 @@ All animations are in `styles.css` with `@keyframes` rules. Adjust timing and ef
 
 ## 📊 Resource Statistics
 
-- **31** Beginner Resources
-- **29** Developer Resources  
-- **60** Total Resources
+- **25** Total Learning Resources
+- Organized into 3 categories: Courses, Practice, and Documentation
+- Each resource includes a helpful description
 
 ## 🤝 Contributing
 
 Want to add a resource? 
 
-1. Edit `script.js` and add to the appropriate array
+1. Edit `script.js` and add to the resources array with name, description, url, and category
 2. Or edit `resources.md` and let us know!
 3. Submit a pull request or leave a comment
 
 ## 💡 Tips
 
-- Use the search to find specific topics (e.g., "CKA", "security", "tutorial")
+- Use the search to find specific topics (e.g., "CKA", "security", "tutorial", "certification")
+- Search works on resource names, descriptions, and URLs
 - Filter by category to focus on your learning path
 - Bookmark resources by opening them in new tabs
 - Share this page with other Kubernetes learners!
 
 ## 🎓 Learning Path Suggestion
 
-### For Beginners:
+### Getting Started:
 1. Start with **Kubernetes 101** and **Docs Home**
-2. Practice with **CKAD Exercises** and **Katacoda**
+2. Watch **CNCF YouTube** videos and **Code Walkthroughs**
 3. Use the **Kubectl Cheat Sheet** as reference
-4. Prepare for certification with **CKA Exam Preparation**
+4. Try interactive tutorials on **Katacoda** and **KodeKloud**
 
-### For Contributors:
-1. Join **Kubernetes Slack** community
-2. Read the **Contributors Guide**
-3. Check **Community Calendar** for meetings
-4. Explore **Test Infrastructure** and **Prow Jobs**
+### Certification Prep:
+1. Practice with **CKAD Exercises** and **CKAD Prep**
+2. Use the **CKS CKA CKAD Simulator** for exam practice
+3. Review **Exam Prep Resources** and **CKAD Practice Questions**
+4. Take courses on **Udemy** or **edX**
 
 ## 📝 License
 
