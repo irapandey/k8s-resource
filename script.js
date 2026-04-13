@@ -21,7 +21,27 @@ const resources = [
     { name: 'Core Concepts of Kubernetes', description: 'Deep dive into Kubernetes core concepts', url: 'https://dominik-tornow.medium.com/', category: 'docs' },
     { name: 'CNCF YouTube', description: 'Cloud Native Computing Foundation YouTube channel', url: 'https://youtube.com/c/cloudnativefdn', category: 'courses' },
     { name: 'Kubernetes Design Principles', description: 'Understanding Kubernetes design and architecture', url: 'https://youtu.be/ZuIQurh_kDk', category: 'courses' },
-    { name: 'Security Resources', description: 'Awesome Kubernetes security resources and tools', url: 'https://github.com/magnologan/awesome-k8s-security', category: 'docs' }
+    { name: 'Security Resources', description: 'Awesome Kubernetes security resources and tools', url: 'https://github.com/magnologan/awesome-k8s-security', category: 'docs' },
+    
+    // Additional high-quality resources
+    { name: 'Kubernetes the Hard Way', description: 'Learn Kubernetes by building a cluster from scratch', url: 'https://github.com/kelseyhightower/kubernetes-the-hard-way', category: 'practice' },
+    { name: 'Kubernetes Patterns', description: 'Reusable design patterns for cloud-native applications', url: 'https://k8spatterns.io/', category: 'docs' },
+    { name: 'Kubernetes Best Practices', description: 'Book and resources on Kubernetes best practices', url: 'https://www.oreilly.com/library/view/kubernetes-best-practices/9781492056461/', category: 'docs' },
+    { name: 'Play with Kubernetes', description: 'Free browser-based Kubernetes playground', url: 'https://labs.play-with-k8s.com/', category: 'practice' },
+    { name: 'Kubernetes Podcast', description: 'Weekly podcast about Kubernetes and cloud native', url: 'https://kubernetespodcast.com/', category: 'courses' },
+    { name: 'Kubernetes Blog', description: 'Official Kubernetes blog with updates and tutorials', url: 'https://kubernetes.io/blog/', category: 'docs' },
+    { name: 'Awesome Kubernetes', description: 'Curated list of Kubernetes tools and resources', url: 'https://github.com/ramitsurana/awesome-kubernetes', category: 'docs' },
+    { name: 'Kubernetes Tutorials', description: 'Step-by-step tutorials from the official docs', url: 'https://kubernetes.io/docs/tutorials/', category: 'courses' },
+    { name: 'K8s Security Best Practices', description: 'NSA/CISA Kubernetes hardening guide', url: 'https://media.defense.gov/2022/Aug/29/2003066362/-1/-1/0/CTR_KUBERNETES_HARDENING_GUIDANCE_1.2_20220829.PDF', category: 'docs' },
+    { name: 'Kubernetes Failure Stories', description: 'Learn from real-world Kubernetes failures', url: 'https://k8s.af/', category: 'docs' },
+    { name: 'KubeWeekly', description: 'Weekly newsletter with Kubernetes news and articles', url: 'https://www.cncf.io/kubeweekly/', category: 'docs' },
+    { name: 'Kubernetes Slack Workspace', description: 'Join the official Kubernetes community on Slack', url: 'https://slack.k8s.io/', category: 'docs' },
+    { name: 'Kubernetes Reddit', description: 'Active community discussing Kubernetes topics', url: 'https://www.reddit.com/r/kubernetes/', category: 'docs' },
+    { name: 'Kubernetes Operators', description: 'Learn about Kubernetes Operators pattern', url: 'https://operatorhub.io/', category: 'docs' },
+    { name: 'Helm Documentation', description: 'Package manager for Kubernetes applications', url: 'https://helm.sh/docs/', category: 'docs' },
+    { name: 'Kustomize Tutorial', description: 'Kubernetes native configuration management', url: 'https://kubectl.docs.kubernetes.io/guides/introduction/kustomize/', category: 'docs' },
+    { name: 'K9s', description: 'Terminal UI for managing Kubernetes clusters', url: 'https://k9scli.io/', category: 'docs' },
+    { name: 'Lens IDE', description: 'Kubernetes IDE for managing clusters visually', url: 'https://k8slens.dev/', category: 'docs' }
 ];
 
 
