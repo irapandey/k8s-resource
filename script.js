@@ -41,7 +41,11 @@ const resources = [
     { name: 'Helm Documentation', description: 'Package manager for Kubernetes applications', url: 'https://helm.sh/docs/', category: 'docs' },
     { name: 'Kustomize Tutorial', description: 'Kubernetes native configuration management', url: 'https://kubectl.docs.kubernetes.io/guides/introduction/kustomize/', category: 'docs' },
     { name: 'K9s', description: 'Terminal UI for managing Kubernetes clusters', url: 'https://k9scli.io/', category: 'docs' },
-    { name: 'Lens IDE', description: 'Kubernetes IDE for managing clusters visually', url: 'https://k8slens.dev/', category: 'docs' }
+    { name: 'Lens IDE', description: 'Kubernetes IDE for managing clusters visually', url: 'https://k8slens.dev/', category: 'docs' },
+
+    // Kubernetes Networking Resources
+    { name: 'Kubernetes Networking Guide', description: 'Comprehensive guide to Kubernetes networking concepts', url: 'https://kubernetes.io/docs/concepts/services-networking/', category: 'docs' },
+    { name: 'Understanding K8s Networking', description: 'Deep dive into Kubernetes networking model and implementation', url: 'https://sookocheff.com/post/kubernetes/understanding-kubernetes-networking-model/', category: 'docs' },
 ];
 
 
