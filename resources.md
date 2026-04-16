@@ -19,6 +19,7 @@ Folks, Leave me a comment / URL if something you like is missing!
 | learn k8s | https://learnk8s.io/academy | 
 | collabnix | https://collabnix.github.io/kubelabs/ |
 | kodekloud | https://kodekloud.com/ |
+| Iximiuz Labs - A hands on learning platform | https://labs.iximiuz.com |
 | tgik | https://tgik.io | 
 | Intro slides copy | [slides](https://docs.google.com/presentation/d/1WjSJHiMgaBABk3T1MRZp2N5znpIxGMYVven2sHN800w/edit?usp=sharing) |
 | code walk throughs | https://www.youtube.com/playlist?list=PL69nYSiGNLP0gugLYzpNR1ueyUj9GjzpK |
