@@ -1,7 +1,5 @@
 // Resource data from resources.md
 const resources = [
-    { name: 'Kube Academy', description: 'Comprehensive Kubernetes learning platform with courses and tutorials', url: 'https://kube.academy/', category: 'courses' },
-    { name: 'Kubernetes 101', description: 'Introduction course to Kubernetes fundamentals', url: 'https://kube.academy/courses/kubernetes-101/', category: 'courses' },
     { name: 'Docs Home', description: 'Official Kubernetes documentation', url: 'https://kubernetes.io/docs/home/', category: 'docs' },
     { name: 'CKS CKA CKAD Simulator', description: 'Practice simulator for Kubernetes certifications', url: 'https://killer.sh/', category: 'practice' },
     { name: 'Udemy CKA Courses', description: 'Certified Kubernetes Administrator courses on Udemy', url: 'https://www.udemy.com/topic/certified-kubernetes-administrator-cka/', category: 'courses' },
