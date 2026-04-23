@@ -2,6 +2,7 @@
 const resources = [
     { name: 'Docs Home', description: 'Official Kubernetes documentation', url: 'https://kubernetes.io/docs/home/', category: 'docs' },
     { name: 'Kubernetes Community Calendar', description: 'Meetings in the Kubernetes Community', url: 'https://www.kubernetes.dev/resources/calendar/', category: 'community' },
+    {name: 'Kubernetes New Contributor Orientation', description:'A guide for new contributors to Kubernetes', url: 'https://www.kubernetes.dev/docs/orientation/', category: 'docs' },
     { name: 'CKS CKA CKAD Simulator', description: 'Practice simulator for Kubernetes certifications', url: 'https://killer.sh/', category: 'practice' },
     { name: 'Udemy CKA Courses', description: 'Certified Kubernetes Administrator courses on Udemy', url: 'https://www.udemy.com/topic/certified-kubernetes-administrator-cka/', category: 'courses' },
     { name: 'CKAD Practice Questions', description: 'Practice questions for CKAD certification', url: 'https://dev.to/liptanbiswas/ckad-practice-questions-4mpn', category: 'practice' },
@@ -51,11 +52,25 @@ const resources = [
 
 // Initialize the page
 document.addEventListener('DOMContentLoaded', () => {
+    updateStatNumbers();
     renderResources();
     setupEventListeners();
     animateStats();
     addCardAnimations();
 });
+
+// Update stat numbers dynamically based on actual resource counts
+function updateStatNumbers() {
+    const totalResources = resources.length;
+    const coursesCount = resources.filter(r => r.category === 'courses').length;
+    const docsCount = resources.filter(r => r.category === 'docs').length;
+    
+    // Update the data-target attributes
+    const statNumbers = document.querySelectorAll('.stat-number');
+    statNumbers[0].dataset.target = totalResources;
+    statNumbers[1].dataset.target = coursesCount;
+    statNumbers[2].dataset.target = docsCount;
+}
 
 // Render resource cards
 function renderResources() {
